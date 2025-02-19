@@ -44,6 +44,14 @@ body{
 .formplace{
     width: 50% !important;
 }
+@media (max-width:375px) {
+    .frontcard,.backcard{
+        max-width: 275px !important;
+    }
+    .cardnumber{
+        font-size: 20px !important;
+    }
+}
 @media (max-width: 475px) {
     .cardnumber{
         font-size: 23px;
