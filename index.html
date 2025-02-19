@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Cards / Project</title>
+  <!-- bootstrap -->
+   <link rel="stylesheet" href="assets/style/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/style/style.css">
+   <!---->
+   <!-- google font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+   <!---->
+</head>
+<body>
+<div class="row p-0 m-0 h-100">
+  <div class="imgside col-12 col-md-4 h-100">
+    <div class="backcard">
+      <h6 class="cvc text-white" id="cvcholder">CVC</h6>
+    </div>
+    <div class="frontcard d-flex align-items-end p-2">
+      <img class="profile" src="images/card-logo.svg" alt="">
+      <div class="cardcontent justify-content-between w-100">
+        <h2 class="cardnumber d-flex justify-content-center align-items-center text-white" id="cardnumberholder">0000 0000 0000 0000</h2>
+         <div class="d-flex justify-content-between">
+           <h6 id="cardname" class="text-white">Cardholder Name</h6>
+           <div>
+             <span id="cardmonth" class="text-white">MM</span>
+             <span class="text-white">/</span>
+             <span id="cardyear" class="text-white">YY</span>
+             <br>
+           </div>
+         </div>
+      </div>
+    </div>
+</div>
+  <div class="contentside col-12 col-md-8 d-flex justify-content-center align-items-start align-items-md-center gap-3">
+<div class="formplace mx-auto h-50">
+  <form class="p-3" id="formplace">
+    <div class="my-3">
+      <label for="exampleFormControlInput1" class="form-label">Cardholder Name</label>
+  <input id="cardholderinput" type="email" class="form-control" id="exampleFormControlInput1" placeholder="e.g.James Henry">
+    </div>
+    <div class="my-3">
+      <label for="exampleFormControlInput1" class="form-label">Card Number</label>
+  <input maxlength="16" type="text" class="form-control" id="Cardholdernumberinput" placeholder="e.g.1234 5678 9123 4567">
+    </div>
+    <div class="my-3">
+      <div class="row p-0 m-0 justify-content-around">
+        <label for="exampleFormControlInput1" class="form-label p-0 m-0">Exp.Date (MM/YY)</label>
+        <div class="col-3">
+          <input id="cardmonthinput" maxlength="2" type="text" class="form-control" id="exampleFormControlInput1" placeholder="MM">
+        </div>
+        <div class="col-3">
+          <input id="cardyearinput" maxlength="2" type="text" class="form-control" id="exampleFormControlInput1" placeholder="YY">
+        </div>
+        <div class="col-6">
+          <input maxlength="3" type="text" class="form-control" id="cvcbtn" placeholder="CVC">
+        </div>
+      </div>
+    </div>
+    <div>
+      <input value="Comfirm" type="submit" class="form-control" id="comfirmbtn">
+    </div>
+  </form>
+  <div class="success d-none" id="successmessage">
+    <div class="mb-5 d-flex justify-content-center align-items-center">
+      <img src="images/icon-complete.svg" alt="">
+    </div>
+    <h1 class="text-center mb-3">Thank You!</h1>
+    <h5 class="text-center mb-5">We Have Added Your Credit Detail</h5>
+    <input type="submit" class="form-control w-75 mx-auto" id="comfirmbtn">
+  </div>
+</div>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>

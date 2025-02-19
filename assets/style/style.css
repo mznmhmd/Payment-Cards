@@ -1,0 +1,101 @@
+body{
+    font-family: "Space Grotesk", serif;
+    height: 100vh;
+}
+:root{
+    --hovercolor: linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+    --errorcolor:hsl(0, 100%, 66%);
+}
+.frontcard{
+    background-image:url(../../images/bg-card-front.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 447px;
+    height: 245px;
+    position: absolute;
+    right: -100px;
+    top: 130px;
+}
+
+.profile{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.backcard{
+    background-image:url(../../images/bg-card-back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 447px;
+    height: 245px;
+    position: relative;
+    right: -320px;
+    top: 400px;
+}
+.imgside{
+    position: relative;
+    background-image:url(../../images/bg-main-desktop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.formplace{
+    width: 50% !important;
+}
+@media (max-width: 475px) {
+    .cardnumber{
+        font-size: 23px;
+    }
+    .imgside{
+        background-image:url(../../images/bg-main-mobile.png);
+        height: 240px !important;
+    }
+    .formplace{
+        width: 100% !important;
+    }
+    .frontcard{
+        /* display: none !important; */
+        max-width: 300px;
+        background-image:url(../../images/bg-card-front.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        right: 85px;
+        border-radius: 10px;
+        height: 200px;
+        top: 150px;
+    }
+    .backcard{
+        height: 200px;
+        position: relative;
+        left: 85px;
+        top: 10px; 
+        max-width: 300px;
+        border-radius: 10px;
+    }
+}
+[type='email']{
+    color: var(--activecolor) !important;
+}
+label{
+    color: var(--hovercolor);
+}
+[type='submit']{
+    content: 'Comfirm' !important;
+    background-color:hsl(278, 100%, 7%) !important;
+    color: white !important;
+}
+.cvc{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+}
+h2{
+    letter-spacing: 1px !important;
+}
+.redborder{
+    border: 2px solid red;
+}
